@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>ReceiptRoute Privacy Policy</title></head>
+<body style="font-family:sans-serif;max-width:700px;margin:40px auto;line-height:1.5;padding:0 16px;">
+# Privacy Policy — ReceiptRoute
+
+**Last updated: September 28, 2026**
+
+ReceiptRoute ("the app") is developed by Afaq (Lownix Tech). This policy explains what data the app handles and why.
+
+## What the app does
+ReceiptRoute lets a delivery rider photograph a restaurant receipt, reads the customer's address from the photo using on-device text recognition, finds that address on a map, and opens a navigation app.
+
+## Data the app uses
+
+**Camera / Photos.** Used only to capture or select a photo of a receipt. Photos are processed on your device to read the text; they are not uploaded, stored on our servers, or shared, unless the optional handwriting feature below is used.
+
+**Receipt text (addresses, phone numbers, names).** Read from the photo on-device using Google ML Kit. This data stays on your device and is used to:
+- Search for the matching real-world address via **Photon** (photon.komoot.io), a free OpenStreetMap-based address search service. The address text you scan is sent to Photon to find a location; Photon does not receive your name or device identity.
+- Open your chosen navigation app (Google Maps, Apple Maps, or Waze) with the destination address.
+- Optionally dial the customer's phone number, if you tap Call.
+
+**Delivery list.** Addresses, phone numbers, and amounts you save into your delivery list are stored only on your device (local storage) and are never sent to us. You control clearing this list.
+
+**Optional: handwriting reading.** If on-device reading can't find an address on a handwritten receipt, and you choose to use the optional AI reading feature, the receipt photo is sent to one of these third-party services to read the handwriting:
+- Google AI Studio (Gemini/Gemma models) — generativelanguage.googleapis.com
+- Groq — api.groq.com
+
+This only happens if you enable the feature and supply your own free API key in Settings. If you use the fully offline model (Gemma, downloaded once to your device), no photo ever leaves your device for this feature.
+
+## Third-party services
+- **Photon / OpenStreetMap** — address search (see [Photon](https://photon.komoot.io) and [OpenStreetMap privacy policy](https://wiki.osmfoundation.org/wiki/Privacy_Policy))
+- **Google AI Studio / Gemini API** — optional handwriting reading ([Google privacy policy](https://policies.google.com/privacy))
+- **Groq** — optional handwriting reading ([Groq privacy policy](https://groq.com/privacy-policy/))
+- **Google Maps / Apple Maps / Waze** — navigation, opened via your device's own map apps
+
+## Data we do not collect
+We do not operate any server that stores your receipts, addresses, or delivery history. We do not sell or share your data with advertisers. We do not use your data for purposes other than the app's core function described above.
+
+## Children's privacy
+ReceiptRoute is intended for delivery riders and is not directed at children.
+
+## Your choices
+You can deny camera permission (the app cannot scan receipts without it) and can leave the optional AI handwriting feature turned off, in which case no receipt photo is ever sent to a third party.
+
+## Changes to this policy
+If this policy changes, the "Last updated" date above will change and, for material changes, we will note it in the app's Play Store listing.
+
+## Contact
+For questions about this policy, contact: afaqawan35202@gmail.com
+</body></html>
